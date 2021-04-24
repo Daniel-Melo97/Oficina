@@ -13,6 +13,9 @@ module.exports ={
     async buscar(request,response){
 
     },
+    async buscarPorNome(request,response){
+
+    },
     async listar(request,response){
 
     }
