@@ -1,5 +1,5 @@
 import {Button, Container, Form, Col, Row, Navbar, Nav, Table, FormControl, ButtonToolbar,ButtonGroup} from 'react-bootstrap';
-
+import {FiLogOut, FiSearch} from 'react-icons/fi';
 
 export default function TelaAdm(){
    
@@ -7,30 +7,36 @@ export default function TelaAdm(){
         <Container fluid>
             <Row >
                 <Col sm={2} className="bg-dark">
-                    <Row className="p-2">
-                        <h1 className="text-light">Editar</h1>
-                    </Row>
-                    <Row className="p-2">
-                        <Button block variant="outline-light">
-                            Pessoa
-                        </Button>
-                    </Row>
-                    <Row className="p-2">
-                        <Button block variant="outline-light">
-                            Carro
-                        </Button>
-                    </Row>
-                    <Row className="p-2">
-                        <Button block variant="outline-light">
-                            Serviço
-                        </Button>
-                    </Row>
-                    <Row className="p-2">
-                        <Button block variant="outline-light">
-                            Item
-                        </Button>
-                    </Row>
-                    
+                    <Container>
+                        <Row className="p-2">
+                            <h1 className="text-light">Editar</h1>
+                        </Row>
+                        <Row className="p-2">
+                            <Button block variant="outline-light" disabled>
+                                Início
+                            </Button>
+                        </Row>
+                        <Row className="p-2">
+                            <Button block variant="outline-light">
+                                Pessoa
+                            </Button>
+                        </Row>
+                        <Row className="p-2">
+                            <Button block variant="outline-light">
+                                Carro
+                            </Button>
+                        </Row>
+                        <Row className="p-2">
+                            <Button block variant="outline-light">
+                                Serviço
+                            </Button>
+                        </Row>
+                        <Row className="p-2">
+                            <Button block variant="outline-light">
+                                Item
+                            </Button>
+                        </Row>
+                    </Container>
                 </Col>
                 <Col sm={10}>
                     <Row>
@@ -50,9 +56,9 @@ export default function TelaAdm(){
                                 </Nav>
                                 <Form inline>
                                     <FormControl type="text" placeholder="Procurar por modelo" className="mr-sm-2"/>
-                                    <Button variant="success">Buscar</Button>
+                                    <Button variant="success"><FiSearch size={20} color="white"/>Buscar</Button>
                                 </Form>
-                                <Navbar.Brand><Button variant="danger" className="mx-2">Deslogar</Button></Navbar.Brand>
+                                <Navbar.Brand><Button variant="danger" className="mx-2"><FiLogOut size={20} color="white"/>Deslogar</Button></Navbar.Brand>
                             </Navbar.Collapse>
                         </Navbar>
                     </Row>
